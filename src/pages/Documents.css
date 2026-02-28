@@ -1,0 +1,57 @@
+/* PDF card */
+.pdf-card-item {
+  padding: 18px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.pdf-card-item:hover {
+  border-color: var(--border-2);
+  transform: translateY(-2px);
+}
+.pdf-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.pdf-card-icon {
+  width: 44px; height: 52px;
+  background: linear-gradient(160deg, #ef4444, #dc2626);
+  border-radius: 8px 8px 8px 2px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 800; color: white;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(239,68,68,0.3);
+}
+.drop-zone {
+  border: 2px dashed var(--border-2);
+  border-radius: var(--r-lg);
+  padding: 28px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+  background: var(--bg-2);
+}
+.drop-zone:hover, .drop-zone.drag-over {
+  border-color: var(--indigo);
+  background: var(--indigo-dim);
+}
+.drop-zone.has-file {
+  border-style: solid;
+  border-color: var(--green);
+  background: var(--green-dim);
+  cursor: default;
+}
+.dz-empty-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.dz-file {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+.dz-file-icon { font-size: 28px; }
